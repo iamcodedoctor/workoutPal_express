@@ -10,9 +10,6 @@ const app = express();
 app.use(express.json({limit: '50mb'}));
 app.use(cors(corsOptions));
 
-
-
-
 // Server test route
 app.get("/", (req, res) => {
     res.status(200).send("Uphar Gruh Server reached.");
